@@ -1,0 +1,381 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Celebria Co. | Luxury Wedding Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1a1c1c",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-primary-fixed-variant": "#574500",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-container": "#b5b2b2",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#464545",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-low": "#f3f3f4",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#e9c349",
+                        "primary": "#735c00",
+                        "on-surface-variant": "#4d4635",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#c9c6c5",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#554300",
+                        "inverse-surface": "#2f3131",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "surface-tint": "#735c00",
+                        "surface": "#f9f9f9",
+                        "on-secondary-fixed-variant": "#46483d",
+                        "on-secondary-container": "#626458",
+                        "primary-fixed": "#ffe088",
+                        "outline-variant": "#d0c5af",
+                        "outline": "#7f7663",
+                        "background": "#f9f9f9",
+                        "tertiary": "#5f5e5e",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary-fixed-variant": "#474646",
+                        "surface-dim": "#dadada",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#241a00",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#c7c7ba",
+                        "primary-container": "#d4af37",
+                        "on-secondary-fixed": "#1b1c14",
+                        "secondary-fixed": "#e3e3d5",
+                        "secondary-container": "#e0e1d2",
+                        "secondary": "#5e5f54"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "margin-desktop": "80px",
+                        "container-max": "1440px",
+                        "unit": "8px",
+                        "margin-mobile": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid #d4af37;
+        }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #d4af37, #ffe088, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .divider-gold {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+        .ambient-shadow {
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.05);
+        }
+        /* Custom Scrollbar for sleekness */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f9f9f9; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d0c5af; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37; 
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar Shared Component -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-on-background/70 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md text-on-background dark:text-surface-bright tracking-tight">Celebria Co.</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-primary dark:text-primary-fixed-dim font-semibold border-b-2 border-primary pb-1 font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary-fixed-dim/10 transition-colors" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary-fixed-dim/10 pb-1 border-b-2 border-transparent" href="#services">Services</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary-fixed-dim/10 pb-1 border-b-2 border-transparent" href="#about">Portfolio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary-fixed-dim/10 pb-1 border-b-2 border-transparent" href="#contact">Pricing</a>
+</div>
+<div class="hidden md:block">
+<button class="bg-on-background text-on-primary px-6 py-3 rounded hover:bg-primary-container transition-colors duration-300 font-label-sm text-label-sm tracking-widest uppercase">
+                    Book Now
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+<!-- Cinematic Background Placeholder -->
+<div class="absolute inset-0 z-0 bg-surface-container-high">
+<div class="absolute inset-0 bg-black/30 z-10"></div>
+<img alt="A sweeping cinematic wide shot of a lavish Indian wedding setup at sunset. The scene features intricate gold mandap structures, lush floral arrangements in deep reds and pristine whites, and soft, glowing ambient lighting. The atmosphere is grand, romantic, and highly exclusive, reflecting a luxury wedding management brand." class="w-full h-full object-cover" data-alt="A sweeping cinematic wide shot of a lavish Indian wedding setup at sunset. The scene features intricate gold mandap structures, lush floral arrangements in deep reds and pristine whites, and soft, glowing ambient lighting. The atmosphere is grand, romantic, and highly exclusive, reflecting a luxury wedding management brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG7efRW3lXdqwRn3GMgvgBre8yAqklY71jrGWF1f9nZcEz6jlLbeuZuMBo3U2ncrxpE-jFNXYBpdKVTnDJHM-dGV4UDNOMvNhT7mHshQ1441IJbViCpxJExsZrHbGU-sZjFepElZn8y8dThkjrlgDEAuxaiSuu89cMOq1CO2VIHoPiUya_JbNBTKPmdfW6wKlFqr14YQ_h5aBBMDfd67_cH2vgDIup-YpXBKh-5s7odsMCTBDgnHLgYNaBR1SpNhzKCBgnDvBokYo">
+</div>
+<div class="relative z-20 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto flex flex-col items-center">
+<div class="mb-8 w-16 h-px bg-primary-container"></div>
+<h1 class="font-display-lg text-display-lg text-on-primary mb-6 text-shadow-lg leading-tight">
+                YOUR COMPLETE <br>
+<span class="text-primary-fixed">WEDDING SOLUTION</span>
+</h1>
+<p class="font-body-lg text-body-lg text-surface-bright mb-12 max-w-2xl mx-auto italic">
+                "We Don't Just Organize Weddings — We Create Memories For A Lifetime."
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center w-full sm:w-auto">
+<button class="bg-primary-container text-on-primary-container px-10 py-4 rounded font-label-sm text-label-sm tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all duration-300">
+                    Book Consultation
+                </button>
+<button class="border border-primary-fixed text-primary-fixed bg-on-background/40 backdrop-blur-sm px-10 py-4 rounded font-label-sm text-label-sm tracking-widest uppercase hover:bg-primary-fixed hover:text-on-primary-fixed transition-all duration-300">
+                    Explore Services
+                </button>
+</div>
+</div>
+</header>
+<!-- Trust Badges Section -->
+<section class="py-12 bg-surface-container-lowest border-b border-primary-container/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-80">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">event_available</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">Planning</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">Decor</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">restaurant</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">Catering</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">music_note</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">Entertainment</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">photo_camera</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">Photography</span>
+</div>
+</div>
+</div>
+</section>
+<!-- About / Timeline Section -->
+<section class="py-32 bg-surface relative overflow-hidden" id="about">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-primary-container/0 to-primary-container"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-4 block">Our Process</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-8">Flawless Execution. <br><span class="italic text-on-surface-variant font-medium">Timeless Memories.</span></h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto mb-20">
+                We handle everything so that families can enjoy every moment. From the first conceptual sketch to the final farewell, our dedicated team ensures absolute perfection.
+            </p>
+<!-- Horizontal Timeline -->
+<div class="relative flex flex-col md:flex-row justify-between items-center md:items-start max-w-5xl mx-auto gap-12 md:gap-0">
+<!-- Line connecting dots -->
+<div class="hidden md:block absolute top-6 left-12 right-12 h-px bg-primary-container/30"></div>
+<!-- Steps -->
+<div class="relative flex flex-col items-center group w-full md:w-1/4">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest border border-primary-container flex items-center justify-center mb-6 z-10 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container">visibility</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-2">Vision</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Understanding your dream.</p>
+</div>
+<div class="relative flex flex-col items-center group w-full md:w-1/4">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest border border-primary-container flex items-center justify-center mb-6 z-10 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container">edit_document</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-2">Planning</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Meticulous budgeting &amp; design.</p>
+</div>
+<div class="relative flex flex-col items-center group w-full md:w-1/4">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest border border-primary-container flex items-center justify-center mb-6 z-10 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container">handshake</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-2">Coordination</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Seamless vendor management.</p>
+</div>
+<div class="relative flex flex-col items-center group w-full md:w-1/4">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest border border-primary-container flex items-center justify-center mb-6 z-10 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container">celebration</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-2">Celebration</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Flawless on-day execution.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-32 bg-surface-container-lowest" id="services">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-20">
+<div class="divider-gold w-24 mx-auto mb-6"></div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">Our Complete Wedding Services</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Elevating every aspect of your celebration with uncompromising quality and dedicated expertise.</p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+<!-- Barati Management (Featured) -->
+<div class="md:col-span-2 glass-card p-8 md:p-12 relative overflow-hidden group rounded-lg ambient-shadow flex flex-col justify-end min-h-[400px]">
+<div class="absolute inset-0 z-0 transition-transform duration-700 group-hover:scale-105">
+<img alt="A vibrant, high-energy Indian wedding procession (Baraat) at night. The scene is illuminated by spectacular cold pyrotechnics and colorful LED lighting from a grand DJ vehicle. Crowds are dancing amidst paper blast confetti showers. The mood is exhilarating and lavish, capturing the peak of celebration in a luxury wedding context." class="w-full h-full object-cover opacity-80 mix-blend-multiply brightness-50" data-alt="A vibrant, high-energy Indian wedding procession (Baraat) at night. The scene is illuminated by spectacular cold pyrotechnics and colorful LED lighting from a grand DJ vehicle. Crowds are dancing amidst paper blast confetti showers. The mood is exhilarating and lavish, capturing the peak of celebration in a luxury wedding context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDQ21ymW_MyjcJ7hCe0laiPgZ2-hYpFElpfnVDuoz-q9LvOS6TY1o1_9kqp9OLUpNUFyDWKQj2HY7mFlSghen9unYoGPhQgs0co2SudnCUPyjJ1gUzg5PUdDQ8qcHJn8uoTmWGaBk4i7Idgjf9S0ZnKEv1P9_L7oRY1L2iU4orzeaYnHMbtWj_21g4qGdsiqu2F7jmh5hqcB6WDdsjnZiN-i5jkkVP2QJAxiXL7BEmiopHAuOYv8zhLFhxrM5hchIhHYP7ihUEVd4">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background via-on-background/50 to-transparent z-10"></div>
+<div class="relative z-20">
+<div class="inline-flex items-center gap-2 bg-surface-container-lowest px-3 py-1 rounded-full mb-4">
+<span class="material-symbols-outlined text-[16px] text-primary">local_fire_department</span>
+<span class="font-label-sm text-[10px] text-on-background tracking-widest uppercase">Signature Experience</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest mb-2">Grand Barati Management</h3>
+<p class="font-body-md text-surface-container-high mb-6 max-w-md">Turn your wedding procession into a grand spectacle with our specialized energy and coordination.</p>
+<div class="flex flex-wrap gap-3">
+<span class="bg-on-background/60 backdrop-blur-md border border-primary/50 text-surface-container-lowest px-4 py-2 text-xs font-label-sm uppercase tracking-wider rounded">DJ Vehicle</span>
+<span class="bg-on-background/60 backdrop-blur-md border border-primary/50 text-surface-container-lowest px-4 py-2 text-xs font-label-sm uppercase tracking-wider rounded">Pyro Guns</span>
+<span class="bg-on-background/60 backdrop-blur-md border border-primary/50 text-surface-container-lowest px-4 py-2 text-xs font-label-sm uppercase tracking-wider rounded">Paper Blast</span>
+</div>
+</div>
+</div>
+<!-- Decor & Styling -->
+<div class="glass-card p-8 relative overflow-hidden group rounded-lg ambient-shadow flex flex-col min-h-[400px]">
+<div class="absolute inset-0 bg-surface-variant/20 z-0"></div>
+<div class="relative z-10 flex-grow">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6">format_paint</span>
+<h3 class="font-headline-md text-[24px] text-on-background mb-4">Decor &amp; Styling</h3>
+<p class="font-body-md text-on-surface-variant text-sm">From traditional Mandaps to contemporary Sangeet setups, we design spaces that tell your story beautifully.</p>
+</div>
+<div class="relative z-10 mt-auto pt-6 border-t border-primary-container/30">
+<a class="inline-flex items-center gap-2 text-primary font-label-sm uppercase tracking-widest hover:text-primary-container transition-colors" href="#">
+                            Explore Concepts <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Photography -->
+<div class="glass-card p-8 relative overflow-hidden group rounded-lg ambient-shadow flex flex-col min-h-[300px]">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6">camera</span>
+<h3 class="font-headline-md text-[24px] text-on-background mb-4">Photography &amp; Production</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-6">Cinematic videography, drone coverage, and candid moments captured perfectly to be remembered forever.</p>
+</div>
+</div>
+<!-- Special Moments (Fireworks) -->
+<div class="glass-card p-8 relative overflow-hidden group rounded-lg ambient-shadow flex flex-col min-h-[300px] bg-on-background">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNkNGFmMzciIGZpbGwtb3BhY2l0eT0iMC4xNSIvPjwvc3ZnPg==')] z-0"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary-fixed text-[32px] mb-6">celebration</span>
+<h3 class="font-headline-md text-[24px] text-surface-container-lowest mb-4">Special Moments</h3>
+<p class="font-body-md text-surface-container-high text-sm mb-6">Elevate key moments with our Grand Fireworks Package, featuring Cold Pyro, Sparkulars, and dry ice effects.</p>
+<button class="text-primary-fixed border-b border-primary-fixed pb-1 font-label-sm uppercase tracking-widest hover:text-primary-fixed-dim transition-colors text-xs">View Packages</button>
+</div>
+</div>
+<!-- Catering & Hospitality -->
+<div class="glass-card p-8 relative overflow-hidden group rounded-lg ambient-shadow flex flex-col min-h-[300px]">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6">room_service</span>
+<h3 class="font-headline-md text-[24px] text-on-background mb-4">Catering &amp; Hospitality</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Delicious menus, warm welcomes, and dedicated hospitality desks to ensure your guests are treated like royalty.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BottomNavBar Shared Component (Mobile Only) -->
+<nav class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] rounded-full bg-inverse-surface/90 dark:bg-surface-container-lowest/90 backdrop-blur-lg border border-primary-container/20 shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-50 flex justify-around items-center p-2 gap-4 transition-all duration-200">
+<a class="bg-primary text-on-primary rounded-full px-6 py-2 flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span>WhatsApp</span>
+</a>
+<a class="text-surface-bright dark:text-on-background px-6 py-2 flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest hover:scale-105 transition-transform" href="tel:+916370249582">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span class="sr-only">Call</span>
+</a>
+<a class="text-surface-bright dark:text-on-background px-6 py-2 flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span class="sr-only">Consult</span>
+</a>
+</nav>
+<!-- Footer Shared Component -->
+<footer class="w-full py-20 bg-on-background dark:bg-surface-container-lowest border-t border-primary-fixed-dim/10 fade-in duration-500">
+<div class="flex flex-col items-center text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-12">
+<span class="font-headline-lg text-headline-lg text-primary-fixed dark:text-primary italic block mb-4">Celebria Co.</span>
+<p class="font-body-md text-body-md text-surface-container-high/70 max-w-md mx-auto">
+                    From the Bride's Home to Groom's Home, We Are With You Every Step of the Way.
+                </p>
+</div>
+<!-- Contact Info -->
+<div class="flex flex-col md:flex-row gap-8 md:gap-16 mb-16">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-fixed mb-2">person</span>
+<span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-widest mb-1">Proprietor</span>
+<span class="font-body-md text-body-md text-surface-container-lowest">Akash Pattnaik</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-fixed mb-2">call</span>
+<span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-widest mb-1">Contact</span>
+<span class="font-body-md text-body-md text-surface-container-lowest">+91 63702 49582</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-fixed mb-2">location_on</span>
+<span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-widest mb-1">Location</span>
+<span class="font-body-md text-body-md text-surface-container-lowest">Bhawanipatna, Odisha</span>
+</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-16">
+<a class="font-label-sm text-label-sm text-tertiary-container hover:text-primary-fixed transition-colors hover:opacity-80" href="#">Our Story</a>
+<a class="font-label-sm text-label-sm text-tertiary-container hover:text-primary-fixed transition-colors hover:opacity-80" href="#">Gallery</a>
+<a class="font-label-sm text-label-sm text-tertiary-container hover:text-primary-fixed transition-colors hover:opacity-80" href="#">Legal</a>
+<a class="font-label-sm text-label-sm text-tertiary-container hover:text-primary-fixed transition-colors hover:opacity-80" href="#">Contact Us</a>
+</div>
+<div class="w-full h-px bg-surface-container-high/10 mb-8"></div>
+<p class="font-body-md text-body-md text-tertiary-container">
+                © 2024 Celebria Co. Celebrate • Create • Cherish
+            </p>
+</div>
+</footer>
+</body></html>
